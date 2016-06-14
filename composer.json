@@ -1,0 +1,15 @@
+{
+    "name": "micaherne/composer-moodle-plugin",
+    "description": "Install Moodle plugins with composer",
+    "type": "composer-plugin",
+    "require": {
+        "wikimedia/composer-merge-plugin": "^1.3"
+    },
+    "license": "GPL-v3.0\u001b[D\u001b[D\u001b[\u001b[3~3.0",
+    "authors": [
+        {
+            "name": "Michael Aherne",
+            "email": "micaherne@blueyonder.co.uk"
+        }
+    ]
+}
