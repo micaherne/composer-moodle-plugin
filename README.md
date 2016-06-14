@@ -3,6 +3,8 @@ Moodle Composer Plugin
 This plugin enables installation of Moodle plugins
 using Composer.
 
+*NB: This is a proof-of-concept only and may not work as described, or at all.*
+
 Commands
 --------
 
