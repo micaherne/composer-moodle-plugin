@@ -54,6 +54,7 @@ EOT
 
         // create new input without "moodle" command prefix
         $input = new StringInput(preg_replace('{\bm(?:o(?:o(?:d(?:l(?:e)?)?)?)?)?\b}', '', $input->__toString(), 1));
+
         $this->getApplication()->resetComposer();
 
         return $this->getApplication()->run($input, $output);
