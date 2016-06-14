@@ -3,7 +3,8 @@
     "description": "Install Moodle plugins with composer",
     "type": "composer-plugin",
     "require": {
-        "wikimedia/composer-merge-plugin": "^1.3"
+        "wikimedia/composer-merge-plugin": "^1.3",
+        "composer-plugin-api": "^1.1"
     },
     "license": "GPL-v3.0\u001b[D\u001b[D\u001b[\u001b[3~3.0",
     "authors": [
@@ -11,5 +12,16 @@
             "name": "Michael Aherne",
             "email": "micaherne@blueyonder.co.uk"
         }
-    ]
+    ],
+    "autoload": {
+    	"psr-4": {
+    		"Moodle\\Composer\\" : "src/"
+    	}
+    },
+    "extra": {
+    	"class": "Moodle\\Composer\\Plugin"
+    },
+    "require-dev": {
+        "composer/composer": "^1.1"
+    }
 }
