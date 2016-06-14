@@ -52,7 +52,7 @@ EOT
         // change to composer.local.json
         putenv("COMPOSER=composer.local.json");
 
-        // create new input without "global" command prefix
+        // create new input without "moodle" command prefix
         $input = new StringInput(preg_replace('{\bm(?:o(?:o(?:d(?:l(?:e)?)?)?)?)?\b}', '', $input->__toString(), 1));
         $this->getApplication()->resetComposer();
 
